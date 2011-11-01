@@ -1,0 +1,14 @@
+ul.Discussions li img {
+   height: 45px;
+   width: 45px;
+   float: right;
+}
+
+.Discussion.ItemContent {
+   padding-right: 55px;
+}
+
+.ProfileLink
+{
+margin-left:5px;
+}

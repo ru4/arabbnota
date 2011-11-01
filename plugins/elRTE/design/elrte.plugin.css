@@ -1,0 +1,149 @@
+/* =================================================================================== ELRTE */
+/*.el-rte-logo1,
+.el-rte-logo2,
+.el-rte-logo3,
+.el-rte-logo4
+{
+	background: none top left no-repeat;
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+.el-rte-logo1 {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAMAUExURWtrawUFCHBRCDQmBxkTBXdqS4JdBntbE2ZSKPe6FL7AxeXn7v39/Ziaov/CF7q9xWNKE4hnHZ6gqGpMCWBBANTX3amqsCMjJf++FEIuBDIyMpJzKtbd7K2xuv/HG2ddR7O3wK+CFVhEHCcbA+OpHWVlZbWCBtmhHPq9F6V5DtafGXl5evq3EoplE31bC8XJ0pdyHI9yKBwcHY2PlrWHGXZ6g5WWmb2NGCoqK29ze0pNVXVUCP66E3FTEt6lHeqpDRMVGhUVFYFfEcyXGhMNBFdADv/OHFU9Cf/LHf/JGoGBgf/EF//BHDc7RFtJJC4uMceUGxwfJoGChQwNEaB4F3x9gUAwDfi4F29QDPS0Evr7/Kd6EaGhoZFrFMSPCExEL83NzaampotvLrm4u9rf8GZJCF9KH/Hx8fi6E3d3eb2HBoyPkpCHdvGyEfKzFvK0FoSDg7G1vdDR1GlWMIiMllNVV11dXXR0dENCQkdISmFTMlpAB+/v8JaWlmxnXdXa60UwB1hHJJBpEXFrX8KSGsvLy7GCEsCKC7y+xLeIFsPDw+jq7o5oGIKFj93d3W9SD+bp8Zynwbe3t2hqcJKSkuGmFHx5d+GnGeuvHHFWG3dZEvj4+PP1+8+YEI9oDtCbGnFPAmFHDduhFhEQEZ5zD9/i6WxhR49tH/Dx9N/h5YaIjNHT2NLW3vf399ifEdigG//HHdyjHIeLlerq615WQ+/u7pSNgM2ZHJ+fn/K0E/W0FuTk5KGjqrCzvHllNbO0uLW3vn9gFX5+ftfX1zc3Nzs8P4uNk5eZn1ZAEp2Zk9yfC6Z7FHBqYFBTWcrM0q+vsdrg76qno7S4wr2/xXF5kUZHS0xMTL7CymVYPCMdE/67HJ93GaR2B05HO6Z3DmFNHZWXnV1QNevu9VhNOZOTl3h6fmhhUYZuNV5EDIxrIZqdp2NjY2FjZ+Tm63BwcHBwderv+fi3FvvBGE02Ava3GVpMK//CGZVvFHluWaSmr8nJyfe5H8rJyf7+/gAAAP///8IRIMsAAAIRSURBVHjaYvgLBv//A4ndm2EsIGD4DwZcRUDiUAyQ6FgNEYFIyJ6Q//9/tvg1nv9zvvrpIyReCXgrmqpaSAVKlb+fu1NJASZxLELOfKPkv387VP/9E3bW4hT4CZF4sEAuhDFsPSPj1kn/WOxYWFo+uR8AS5yb+eXfKt8leoHphxlPC1tZKmtwrIQYxRvtJL7YZaNy0JuGgH+OgW09l6B28LuoK//79yKVkZGN+d8/d+fgt2AJ0WnxLLPM//0LfqJQmPnvn8tGV5YtXm//M4g2xkV+zPes/nf+ZNLzZK9/8zzzwnPVHncz1J2a8VJa2rDq6v47fBKC1y32GUpLG/hkFTAoudlOvCAjI6q9zf6WT/sehg/1MilX7kksY3ioYX6DlZX1WamYmpx3LP+RH0BO8XT7ZgYhNm8JG50Ma0auHIPlF83+aXLq2PBJCHcw/A+6f5D9torLPyOxvQrGjP+Yf/ewH/Q7DvLH0k3/TFz//WMWPupv7fLvn+73f7LcEA/q23YyMv4L+DzZyjrkH+NirbQJEJ+vkJ/qku2bavLPaPG/7cxnTSXXnYkCS7wS8XB1uKnCUpnwx19yfrCDk4fkZbBEjSrbhn5FvX9dR8oS/2nqNskJh66FxqCltduiCscpteffid/d9W1hCSLOe5k4Hv1y1GYw2r2mX0AIKTH8Nzb7/7/1NUPf//9PxSAiAAEGAGWFSve5xQAcAAAAAElFTkSuQmCC);
+}
+.el-rte-logo2 {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHyUExURXt7e4iIiIGBgW5ubrS0tISEhHNzczk5OUZGRpubmw4ODn5+fqGhoWtra2pqaoaGhjg4OHx8fLi4uGlpaU9PT01NTZOTk8TExDs7OwMDAwICAgQEBAkJCXp6emZmZsLCwkhISG9vb6ysrMzMzODg4Nzc3NjY2KmpqZ6enoODg6urq2xsbI2NjYuLi4mJiePj40pKSqCgoFxcXFhYWFFRUcDAwCwsLD09Pc/Pz2RkZLy8vP39/UtLS9LS0vz8/AgICM7OzkNDQ6enp19fX0FBQScnJ9ra2kVFRfv7+62trT4+Ph8fH8nJyfb29sPDw5GRkZSUlEdHR7e3t1dXV05OTv7+/igoKBgYGAUFBZaWlp+fnzw8PHR0dH19ffn5+ZmZmfX19cbGxoyMjExMTHV1dZ2dnSQkJHZ2dqOjo/T09AoKClJSUvj4+KKioo6Ojr6+vt/f35CQkGNjY3JycqWlpa6urkBAQLa2tqSkpICAgG1tba+vr1BQUKioqNvb22JiYllZWbu7uzo6Oqampjc3N4KCgl1dXezs7N3d3dnZ2e7u7pWVld7e3vr6+hcXFykpKYqKilVVVS4uLhISEgcHBxYWFg8PDyoqKuHh4RQUFObm5pqamlZWVtbW1oWFhZKSknBwcKqqqsjIyAAAAP///wAAADR8UXwAAACmdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBGa60oAAABqElEQVR42mJYigMwEJJQAGJmTUwJnmYgUa4GJDS0kCU0vGeqs6haWKg0aoVxpfLCJIo5pwUqyi1Zwqa9ZEmspfEUfzaoBEuWs36Bjad1mnevOIdKh+JiFnaIBG+wng+nm9csEYEuG2UhpdkcgjA7ql2UlyxhZG2fwcmwZEmnAAvMDkZr8RDf0CU8jIxRHkvsTNSX6IElGAIMvBylmJY4ufPyclQsEVtcFh2oywaU0JFummNizNQjytY3lc1Alb8he6L5YlYOBm0XVycBdnYzRjmJxYsFLBnNJNhbSiZNT2Joq49g4maQZfITEV68WK5GXlOWgZvVXpSZYSknh5SkjLTzEk1RRWYRwSXMkvbSkhI8IFflcuYv7J+7ZMl8YT6dJUtUXONN/TWg/qiLCViyRLx1kWle0JIltUb68ECcZ2RrZecur+qg5pjgkFgkCJPwDBdzE2Jd4MEvmKmboiyvzqUElVCS5eLxYc/h52OoWqJgxcLFZwgzir9bRibDlzt9gnCc0GSpSkOkGIxk4DO35WZWS17KJMaKHLUKhUCi1A9IMBFKJQABBgCtz+rXu8a5mAAAAABJRU5ErkJggg==);
+}
+.el-rte-logo3 {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIfUExURfz8/Pv7+8fHx3d3d1ZWVnl5eX5+fpCQkF5eXsbGxoGBgfPz84SEhIyMjLy8vKenp8jIyPf395aWlvr6+nV1dXFxcZmZmYODgz09PTExMZGRkWFhYWtra2RkZCcnJ7Kysvb29qmpqb6+voCAgHt7e7S0tLCwsOzs7NbW1tPT04WFhZKSku/v79jY2K6urjMzM5ubm5+fn2VlZWxsbJSUlG1tbSUlJTs7O7i4uCYmJm5ubn19fbq6uiMjI2JiYqSkpGZmZjY2NuXl5QkJCZycnAsLCwQEBAMDA8DAwPHx8aKiosHBwUhISKCgoAEBAfX19VhYWImJiR4eHq2trZOTk7GxsTAwMEtLSz8/P0NDQ7W1tcPDw0xMTOnp6ebm5tra2np6er+/v11dXWBgYMTExGpqaouLi3Z2dgoKCoqKisLCwjo6Orm5uXR0dFpaWhEREUpKSkVFRVJSUo6Ojra2tpeXly0tLSkpKc7Ozu3t7d/f329vb/Ly8lNTU+Dg4Nvb2yoqKh0dHfj4+NDQ0NfX19LS0gcHB6+vr8/PzyAgIKqqqjc3N6urqyEhId7e3k9PT9TU1FtbW5qamhMTEzw8PPn5+WNjY1FRUWdnZ8XFxRwcHEdHRyIiInx8fKamphkZGbe3t3JycvT09I+Pj/Dw8Dk5OZWVlUFBQWlpaejo6AUFBSQkJOrq6lVVVR8fH+fn59HR0f39/f7+/gAAAP///x7h+S0AAAHxSURBVHjaRJJjtyRBDIare2zbM3fMa9u2rbVt27bt3e7kB27j7tl8qJPkqaTekxRBwVgGkWEFjxUzRMwLhybzP+ABf2dhmfMNaS5pXBSLOMAwmC2R3sLgnEuDR5VKIzL/WoWVx+Y9q/6Jie8rDYmMZ3SjFRV6lKlSHATQjQFECgZTzb1zDMOBlr3v+p9dje4bOH3q2/aqkRcK3HOF5QG2GTY3+yp6X8fo3dF830nfGx1hWEJxEm6H8wCSovsjPi1ANT35kBNGKEzYoXK8dQCUEslqB3TmpKA4wj/euD7eq2fkMFQ3VrbjLpTi8uyMLY0kWWN5GsoZ5DcDuq/zupl62avRa9tQ1kWK9dkhWqVKSuxriHRBklxTGXf9Ob+fBAoWuVqrlT+ImRHtl50vU1p1kSlXTDRPooQEqX6oDSjcMQe4iYkiXZ4fBBck3s8/E4cBys2f3gL8yjZNeW2LwqxO+Dd5ASprr0/Z+gCkPWfj3Mh5cGGp59B0Z52z3uXXb3F9bEvR3Pg5oJG2lFY8L3rfIXO079yad0q7H/9m+Yrg8cgHZbPqkqzMkYYD05Pd7oa4ABBT64ODK+2RYau5dS5OyawWsRVnjU3qG3fOyIerZ8NL5Qph7SJAvZXFi19KaER1SFQkAmZDH1LCH+B3/leAAQDnl+2YmQnYoAAAAABJRU5ErkJggg==);
+}
+.el-rte-logo4 {
+	width: 21px;
+	height: 21px;
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAMAUExURfz8/Pv7+8fHx3d3d1ZWVnl5eX5+fpCQkF5eXsbGxoGBgfPz84SEhIyMjLy8vKenp8jIyPf395aWlvr6+nV1dXFxcZmZmYODgz09PTExMZGRkWFhYWtra2RkZCcnJ7Kysvb29qmpqb6+voCAgHt7e7S0tLCwsOzs7NbW1tPT04WFhZKSku/v79jY2K6urjMzM5ubm5+fn2VlZWxsbJSUlG1tbSUlJTs7O7i4uCYmJm5ubn19fbq6uiMjI2JiYqSkpGZmZjY2NuXl5QkJCZycnAsLCwQEBAMDA8DAwPHx8aKiosHBwUhISKCgoAEBAfX19VhYWImJiR4eHq2trZOTk7GxsTAwMEtLSz8/P0NDQ7W1tcPDw0xMTOnp6ebm5tra2np6er+/v11dXWBgYMTExGpqaouLi3Z2dgoKCoqKisLCwjo6Orm5uXR0dFpaWhEREUpKSkVFRVJSUo6Ojra2tpeXly0tLSkpKc7Ozu3t7d/f329vb/Ly8lNTU+Dg4Nvb2yoqKh0dHfj4+NDQ0NfX19LS0gcHB6+vr8/PzyAgIKqqqjc3N6urqyEhId7e3k9PT9TU1FtbW5qamhMTEzw8PPn5+WNjY1FRUWdnZ8XFxRwcHEdHRyIiInx8fKamphkZGbe3t3JycvT09I+Pj/Dw8Dk5OZWVlUFBQWlpaejo6AUFBSQkJOrq6lVVVR8fH+fn59HR0f39/f7+/gAAAP///7W1tba2tre3t7i4uLm5ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///4xgnKYAAAGhSURBVHjaYvgPAv/+/v//F8z4B+YzgNlg4v1/OJsBTD/bD2RqA1knboGFQWr3cdx/KZ0sF7Y6ye7ae2mo2t/T3u9gL928OWTzZmUD/u+Tfvz9CxR9+sV3Vqdqkd+DVdk7guawF5z/BxL9z5/uKGt2cP7xfFV9n1pZ3j9//zH8/ve/f5/+5s3MKkGyPJs3Wx7/CXQew+//1zabhzr7beZgTnbb7K7Hwn4OZJt96sE9f9k2B+wy2Tlxs/H//VtFtf8zGO65cfzYscvMYkf+HzdgvnzkWN7FC8UM8ga/uHh42KaoCf0Xa5eYq8Wj8l3PkOHzDNU/3377braWl1IT3yz15/ufA9KvGP4/Y16+9lr55s2myxZu3rzuhoOM6C2wj+XSZDZvNreOEPXZvJnF6w0wZECiCV5lke67JCTl9mRILnU5DgwfoOjnp8Zms1UWu4m75mbqS7BMf/4PrFYr9evXJFdlESHnmDe/WX9B1P7/b+/A1XOlIdDy8L4EU3ZQAINF/+8R+ff/ktHx//+5FP//gcUQMMr+gTi/gcRfUPwBBBgAOAUgVJrkmFUAAAAASUVORK5CYII=);
+}*/
+.elRteTrigger {
+	text-decoration:none;
+	cursor:pointer;
+}
+/* ============================================================ FIXES FOR ELRTE AND ELFINDER */
+
+li.formatblock div.list div h1,
+li.formatblock div.list div h2,
+li.formatblock div.list div h3,
+li.formatblock div.list div h4,
+li.formatblock div.list div h5,
+li.formatblock div.list div h6 {
+   margin: 0;
+   padding: 0 !important;
+   border: 0;
+   outline: 0;
+   font-weight: inherit;
+   font-style: inherit;
+   background:none;
+   background-color:none;
+   line-height: 100%;
+}
+
+
+.ui-dialog select {
+	padding:0;
+	height:auto !important;
+}
+.el-rte ul {margin:0 !important; padding:0 !important; border:0 !important;}
+
+.el-rte .tabsbar .tab {
+	padding-top: 0px !important; 
+	padding-bottom: 0px !important;
+	cursor:pointer;
+}
+
+.ui-dialog {
+	width: 680px;
+}
+
+.el-dialogform table td:first-child {
+	padding-right: 5px;
+	width: 1%;
+	white-space: nowrap;
+	max-width:150px;
+	font-family:Tahoma;
+	overflow:hidden;
+}
+
+.el-dialogform, .el-dialogform td {
+	font-size: 12px !important;
+}
+
+.el-finder-cwd {
+	text-align: left;
+}
+
+.el-finder-toolbar {
+	text-align: left;
+}
+
+/* ==================================================================== Tipsy */
+.tipsy { 
+	font-size: 10px; 
+	position: absolute; 
+	padding: 5px; 
+	z-index: 100000; 
+}
+.tipsy-inner { 
+	background-color: #000; 
+	color: #FFF; 
+	max-width: 200px; 
+	padding: 5px 8px 4px 8px; 
+	text-align: center; 
+}
+
+/* Rounded corners */
+.tipsy-inner { 
+  border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px; 
+}
+  
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+  
+.tipsy-arrow { 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	border: 5px solid transparent; 
+}
+  
+/* Rules to colour arrows */
+.tipsy-arrow-n { border-bottom-color: #000; }
+.tipsy-arrow-s { border-top-color: #000; }
+.tipsy-arrow-e { border-left-color: #000; }
+.tipsy-arrow-w { border-right-color: #000; }
+
+.tipsy-n .tipsy-arrow, .tipsy-nw .tipsy-arrow, .tipsy-ne .tipsy-arrow { top: 0; border-top: none; }
+.tipsy-s .tipsy-arrow, .tipsy-sw .tipsy-arrow, .tipsy-se .tipsy-arrow { bottom: 0; border-bottom: none; }
+.tipsy-n .tipsy-arrow, .tipsy-s .tipsy-arrow { left: 50%; margin-left: -5px; }
+.tipsy-nw .tipsy-arrow, .tipsy-sw .tipsy-arrow { left: 10px; }
+.tipsy-ne .tipsy-arrow, .tipsy-se .tipsy-arrow { right: 10px; }
+.tipsy-e .tipsy-arrow, .tipsy-w .tipsy-arrow { top: 50%; margin-top: -5px; }
+.tipsy-e .tipsy-arrow { right: 0; border-right: none; }
+.tipsy-w .tipsy-arrow { left: 0; border-left: none; }
+
+/* ============================================================= Tipsy custom */
+
+.tipsy {
+	font-family: Tahoma, Arial, Helvetica;
+	margin-left: 2px;
+}
+
+.tipsy-inner {
+	padding: 0px 5px;
+}
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+span.RoleBadges {
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+}
+
+span.AdministratorBadge {
+	background: transparent url('images/administrator.gif') no-repeat center center;
+}
+
+span.ModeratorBadge {
+	background: transparent url('images/moderator.gif') no-repeat center center;
+}
+
+span.MemberBadge {
+	background: transparent url('images/member.gif') no-repeat center center;
+}
+
+span.ApplicantBadge {
+
+}
+
+span.ConfirmEmailBadge {
+
+}
+
+span.GuestBadge {
+	background: transparent url('images/guest.gif') no-repeat center center;
+}
+
+span.BannedBadge {
+
+}

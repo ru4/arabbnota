@@ -1,0 +1,8 @@
+This is an addon for Vanilla 2 which will add role badges, similar to how
+RoleTitle ( http://vanillaforums.org/addon/704/roletitle ) works, but
+for CSS-able images.
+
+To override the default images, simply create a CSS class in your theme CSS:
+
+span.RoleBadges dictates the default height and width
+span.<Role>Badge dictates the default role image, e.g. span.MemberBadge
